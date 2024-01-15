@@ -15,7 +15,7 @@ Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Them
 
 1. [Lernziele und Übersicht](./README.md)
 1. [Problemstellung](01-problemstellung.md)
-1. [Klasse, Objekt und Objektinstanz]()
+1. [Klasse, Objekt und Objektinstanz](02-klasse-objekt-instanz.md)
 1. [Getter und Setter]()
 1. [Konstruktor]()
 1. [Aufgabenstellung]()

@@ -19,4 +19,5 @@ Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Them
 1. [Konstruktor](04-konstruktoren.md)
 1. [Getter und Setter](05-getter-setter.md)
 1. [Methoden](06-methoden.md)
+1. [Zusammenfassung](07-zusammenfassung.md)
 1. [Aufgabenstellung](XX-aufgabenstellung.md)

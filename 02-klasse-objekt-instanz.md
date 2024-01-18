@@ -1,6 +1,8 @@
 # Klassen, Objekte und Instanzen
 
-Im vorigen Kapitel haben wir festgestellt, was wir jetzt brauchen, um bessere Programme zu schreiben: Klassen, Objekte und deren Instanzen. In diesem Kapitel erklären wir, was diese sind und wie sie angewendet werden. 
+Im vorigen Kapitel haben wir festgestellt, dass wir jetzt mehr brauchen, um bessere Programme zu schreiben: Klassen, Objekte und deren Instanzen. In diesem Kapitel erklären wir, was diese sind und wie sie angewendet werden. 
+
+Klassen und Objekte sind die Basis einer jeden objektorientierten Programmiersprache. Alles basiert auf Klassen. Eine erste Klasse hast du bereits kennengelernt: die Main-Klasse. Sie ist der Startpunkt eines Programms.
 
 In deinem Programm, bevor du anfängst zu programmieren, musst du dir Gedanken darüber machen, wie du dein Programm strukturieren möchtest. Bisher hast du vermutlich alles in einer Datei programmiert. Ab jetzt fangen wir an, größere Programme zu schreiben und uns zu überlegen, wie wir das Ganze in mehreren Dateien aufsplitten, um den Code verständlicher zu gestalten. 
 
@@ -12,7 +14,9 @@ Ersteres haben wir im Abschnitt 05 bereits erläutert.
 
 ## Struktur eines Programms und Modellierung der Aufgabe
 
-Jetzt konzentrieren wir uns auf die Struktur. Dafür nehmen wir ein Beispiel:
+Jetzt konzentrieren wir uns auf die Struktur. 
+
+Dafür nehmen wir ein Beispiel:
 
 Wir modellieren den Kassaablauf in einem Supermarkt. Die Kassa soll folgende Funktionen haben:
 - Produkte scannen
@@ -54,7 +58,7 @@ Wir haben also 3 Entitäten modelliert. In der Softwareentwicklung ist es Standa
 
 ![Objekt-Struktur der Registrierkassa](img/01-registrierkassa-struktur.png)
 
-Im nächsten Schritt müssen wir die sogenannten **Klassen** aufgrund dieses Modells definieren. Eine Klasse ist eine Blaupause für ein Objekt, in dem Sinne, dass diese definiert, welche Attribute das Objekt hat, welchen Datentyp die Attribute haben und welche Methoden das Objekt anbietet. Ein **Objekt** ist also immer eine **Instanz** einer Klasse.
+Im nächsten Schritt müssen wir die entsprechenden **Klassen** aufgrund dieses Modells definieren. Eine Klasse ist eine Blaupause für ein Objekt, in dem Sinne, dass diese definiert, welche Attribute das Objekt hat, welchen Datentyp die Attribute haben und welche Methoden das Objekt anbietet. Ein **Objekt** ist also immer eine **Instanz** einer Klasse.
 
 In den bisherigen Kapiteln haben wir bereits ein Paar Objekte kennengelernt:
 - ArrayList, LinkedList, SortedList
@@ -63,6 +67,8 @@ In den bisherigen Kapiteln haben wir bereits ein Paar Objekte kennengelernt:
 Das sind vordefinierte Klassen. Es besteht auch die Möglichkeit eigene Klassen zu definieren. 
 
 ## Woraus besteht eine Klasse?
+
+Eine Klasse wird in einer eigenen Datei gespeichert, welche den Namen der Klasse trägt. 
 
 Eine Klasse besteht aus folgenden Elementen:
 - (optional) Zuweisung zu einem Package bzw. Import von benötigten Packages

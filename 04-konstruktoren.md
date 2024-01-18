@@ -4,7 +4,24 @@ Der Konstruktor ist die "Methode", die aufgrufen wird, wenn der Befehl **new** v
 
 Konstruktoren sind dazu da, das Objekt zu initialisieren. Initialisieren bedeutet nicht nur, dass die Attribute einen Wert bekommen. Mit einem Konstruktor kann man auch zB eine Datenbankverbindung öffnen, um in den Methoden damit arbeiten zu können. In einer Logging-Klasse könnte man bei der Instanzierung des Objekts zum Beispiel das entsprechende Logfile anlegen und dem Logfileschreiberobjekt zuweisen... 
 
-Sollte in der Klasse kein Konstruktor vorhanden sein, wird implizit ein "leerer" Konstruktor für die Instanzierung eines Objekts angenommen: Es wird der Konstruktor der Klasse Object aufgerufen, von der alle Klassen erben. Dieser Konstruktor erzeugt ein Objekt von der angegebenen Klasse, macht sonst aber nichts. Siehe das Beispiel der Attribute:
+Sollte in der Klasse kein Konstruktor vorhanden sein, wird implizit ein "leerer" Konstruktor für die Instanzierung eines Objekts angenommen: Es wird der Konstruktor der Klasse Object aufgerufen, von der alle Klassen erben. Dieser Konstruktor erzeugt ein Objekt von der angegebenen Klasse, macht sonst aber nichts. 
+
+## Java 
+
+```Java
+public class Person{
+    private final String firstname = "Markus";
+    private final String lastname = "Gruber";
+    private String address;
+}
+```
+## C# 
+
+```c#
+
+```
+
+In diesem Beispiel wurden kein Konstruktor definiert, so wird der Default-Konstruktor verwendet.
 
 Hier bei der Instanzierung eines Objekts, da kein Konstruktor definiert ist, bekommen die Attribute folgende Werte: firstname = "Markus", lastname = "Gruber", address = null. 
 
@@ -30,7 +47,10 @@ public class Person{
 
 ```
 
-Das zweite Beispiel zeigt eine andere Methode, Defaultwerte beim Instanzieren eines Objekts festzulegen.
+Das zweite Beispiel zeigt eine andere Methode, Defaultwerte beim Instanzieren eines Objekts festzulegen. 
+
+> [!IMPORTANT]
+> Wird ein Konstruktor definiert, kommt der Default-Konstruktor nicht mehr zur Anwendung egal, ob ein Konstruktor mit derselben Signatur oder mit einer anderen Signatur erstellt wurde.
 
 An diesem Beispiel erkennt man, woraus ein Konstruktor besteht:
 - **Access Modifier**: public, default oder protected (private macht für einen Konstruktor keinen Sinn)

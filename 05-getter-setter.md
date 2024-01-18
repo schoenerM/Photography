@@ -1,7 +1,5 @@
 # Getter und Setter
 
-Das bringt uns zum Kapitel Getter und Setter. 
-
 Warum sollte man Attribute als private definieren? Es wäre doch einfacher, diese als public zu definieren. So könnte die aufrufende Klasse direkt auf die Attribute zugreifen und diese direkt setzen. 
 
 Das stellt uns vor der Frage, darf immer jeder Inhalt in ein Attribut hinein? Der Inhalt eines Attributs wird ja bereits durch den Datentyp eingeschränkt. Es gibt jedoch viele Fälle, in denen der Wertbereich noch weiter eingeschränkt werden soll. Typische Beispiele sind:
@@ -10,11 +8,13 @@ Das stellt uns vor der Frage, darf immer jeder Inhalt in ein Attribut hinein? De
 - Vorname, Nachname: dürfen lediglich aus Buchstaben und Bindestriche bestehen
 - ...
 
-Genau für solche Fälle, in denen ein Plausibilitätscheck gemacht werden muss, um sicherzustellen, dass die mitgegebenen Daten dem entsprechen, was gespeichert werden darf, macht es Sinn das entsprechende Attribute als private zu definieren und diesen nur über Konstrukturen oder, wenn diese im Nachgang gesetzt werden dürfen, über einen Setter zu setzen.
+Manchmal ist es auch so, dass die Änderung eines Attributs, die Änderung eines anderen Attributs bedeutet. 
+
+Genau für solche Fälle, macht es Sinn das entsprechende Attribute als private zu definieren und diesen nur über Konstrukturen oder, wenn diese im Nachgang gesetzt werden dürfen, über einen Setter zu setzen.
 
 ## Was ist ein Setter?
 
-Ein Setter ist eine Methode, welche den Wert eines Attributs setzt und vorher einen Plausisbilitätscheck des eingegebenen Wertes macht. 
+Ein Setter ist eine Methode, welche den Wert eines Attributs setzt und vorher einen Plausisbilitätscheck des eingegebenen Wertes macht. Ein anderer Anwendungsfall für ein Setter ist, dass der Setter nicht nur den Wert des entsprechenden Attributs setzt, sondern auch andere Parameter beeinflusst.
 
 Ein Setter, der den Wert einfach setzt, ohne diesen zu prüfen, macht wenig Sinn (Code ohne Mehrwert). In diesem Fall ist es sinnvoll, das Attribut als public, default oder protected zu definieren.
 

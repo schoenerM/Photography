@@ -111,9 +111,9 @@ import at.codersbay.mypackage.MyClass
 
 ```
 
-## Klassendefinition
+## Klassendeklaration
 
-Die Klassendefinition erfolgt wie folgt:
+Die Klassendeklaration erfolgt wie folgt:
 
 ### Java 
 
@@ -144,7 +144,5 @@ Wie du erkennen kannst, sind ein Paar Elemente der Deklaration zu erkennen, die 
   - **final**: die Klasse kann nicht vererbt werden. Der Vererbung von Klassen widmen wir uns in einem späteren Kapitel
   - **abstract**: eine spezielle Art von Klassen, aus denen kein Objekt instanziert werden kann. Diese Art Klassen dienen als Vorlage für weitere Klassen. Diesem Thema widmen wir uns in einem späteren Kapitel.
 - **Klassenname**: wie soll die Klasse heißen? Laut Namingkonventionen fangen Klassennamen in Java immer mit einem Großbuchstaben an bzw. der ganze Name wird in Pascal case geschrieben.
-
-Wie Methoden implementiert werden, haben wir bereits in einem früheren Kapitel gelernt, daher werden wir hier nicht näher darauf eingehen.
 
 [Zurück zur Übersicht](README.md)

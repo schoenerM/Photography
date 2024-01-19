@@ -8,8 +8,8 @@ Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Them
 - erklären, wann und wozu Getter und Setter sinnvoll sind
 - erklären, wann und wozu ein Konstruktor sinnvoll ist
 - ein Programm schreiben, das den Clean-Code-Anforderungen entspricht
-- seinen*ihren Code erklären
-- hat seinen*/ihren Code in GitHub eingecheckt
+- seinen\*ihren Code erklären
+- hat seinen\*ihren Code in GitHub eingecheckt
 
 ## Inhaltsverzeichnis
 

@@ -7,3 +7,5 @@
   - Methoden kapseln Verhalten eines Objekts, z.b Bremse treten oder Klingel bedienen. Daher beinhaltet der Name der Methode immer einen Verb.
 - Objekte werden durch Aufruf des Konstruktors erzeugt
 - Mit dem **static** modifier unterscheidet man zwischen Klassen- und Objektvariablen/-methoden
+
+Zurück zur [Startseite](README.md)

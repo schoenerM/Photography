@@ -41,3 +41,5 @@ Mit den bisherigen Mitteln ist es mit Methoden umsetzbar, allerdings besteht kei
 Hier kommen die Konzepte von Klassen und Objekten ins Spiel. Mit diesen 2 Konzepten haben wir die Möglichkeit eine Variable zu definieren, in der alle zusammengehörigen Eigenschaften (Attribute) zusammengefasst werden. Weiters definiert diese Variable nicht nur die Eigenschaften, sondern auch die Fähigkeiten (Methoden) an, die mit dieser Variable verwendet werden können.
 
 So haben wir in einem Objekt immer alle Eigenschaften dieses Objekts und alle Fähigkeiten (was das Objekt tun darf) zusammengefasst. 
+
+Zurück zur [Startseite](README.md)

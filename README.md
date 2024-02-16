@@ -7,9 +7,7 @@ Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Them
 - aufzählen, woraus eine Klasse besteht
 - erklären, wann und wozu Getter und Setter sinnvoll sind
 - erklären, wann und wozu ein Konstruktor sinnvoll ist
-- ein Programm schreiben, das den Clean-Code-Anforderungen entspricht
-- seinen\*ihren Code erklären
-- hat seinen\*ihren Code in GitHub eingecheckt
+- den Unterschied zwischen Klasse und Objekt erklären
 
 ## Inhaltsverzeichnis
 

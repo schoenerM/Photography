@@ -6,7 +6,7 @@ Klassen und Objekte sind die Basis einer jeden objektorientierten Programmierspr
 
 In deinem Programm, bevor du anfängst zu programmieren, musst du dir Gedanken darüber machen, wie du dein Programm strukturieren möchtest. Bisher hast du vermutlich alles in einer Datei programmiert. Ab jetzt fangen wir an, größere Programme zu schreiben und uns zu überlegen, wie wir das Ganze in mehreren Dateien aufsplitten, um den Code verständlicher zu gestalten. 
 
-In deinem Entwicklerleben wirst du in Unternehmen selten alleine arbeiten, erstens wirst du vermutlich nicht alleine an einem Programm arbeiten, zweitens ist es in Unternehmen so, dass es eine Gefahr birgt, wenn ein\*e Mitarbeiter\*in alleinwissend über ein Programm ist. So hat jedes Unternehmen eine Vertretungsregelung und diese Vertretung muss deinen Code verstehen können. Hier spielen mitdestens die folgenden 2 Parameter eine Rolle:
+In deinem Entwicklerleben wirst du in Unternehmen selten alleine arbeiten, erstens wirst du vermutlich nicht alleine an einem Programm arbeiten, zweitens ist es in Unternehmen so, dass es eine Gefahr birgt, wenn ein:e Mitarbeiter:in alleinwissend über ein Programm ist. So hat jedes Unternehmen eine Vertretungsregelung und diese Vertretung muss deinen Code verstehen können. Hier spielen mitdestens die folgenden 2 Parameter eine Rolle:
 - Clean Code/Namenskonventionen/...
 - Struktur
 

@@ -106,7 +106,7 @@ Um es zu erklären, holen wir zunächst ein Bisschen auf. Die Geschichte fängt 
 
 **this** verwendet man sehr häufig in Setters, da man so den Parameter des Setters so nennen kann, wie das Attribut, das damit gesetzt wird und **this** stellt sicher, dass man wie im obigen Beispiel den Wert des Parameters *email* in das Attribut *email* des Objekts: **this.email** ist das Attribut, **email** ist der Parameter.
 
-Das Schlüsselwort **this** hat auch einen anderen Vorteil: der\*ie Leser\*in erkennt auf einem Blick, dass es sich um das Objekt handelt, in dem das Programm sich befindet. 
+Das Schlüsselwort **this** hat auch einen anderen Vorteil: der:ie Leser:in erkennt auf einem Blick, dass es sich um das Objekt handelt, in dem das Programm sich befindet. 
 
 Mit ihm kann man alle Attribute, Getter, Setter und Methoden der Klasse aufrufen. Dies erfolgt mit:
 - **this.attributname**

@@ -2,12 +2,12 @@
 
 ## Lernziele
 Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Themas:
-- erklären, was eine Klasse, ein Objekt bzw. eine Objektinstanz ist
-- erklären, wozu man diese Konzepte benötigt
-- aufzählen, woraus eine Klasse besteht
-- erklären, wann und wozu Getter und Setter sinnvoll sind
-- erklären, wann und wozu ein Konstruktor sinnvoll ist
-- den Unterschied zwischen Klasse und Objekt erklären
+- Erklären, was eine Klasse, ein Objekt bzw. eine Objektinstanz ist
+- Erklären, wozu man diese Konzepte benötigt
+- Aufzählen, woraus eine Klasse besteht
+- Erklären, wann und wozu Getter und Setter sinnvoll sind
+- Erklären, wann und wozu ein Konstruktor sinnvoll ist
+- Den Unterschied zwischen Klasse und Objekt erklären
 
 ## Inhaltsverzeichnis
 

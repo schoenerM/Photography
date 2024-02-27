@@ -22,7 +22,7 @@ Sie werden fragen, warum der Plausibilitätscheck nicht in der aufrufenden Klass
 
 ## Wie definiert man ein Setter?
 
-Grundsätzlich lautet die Regel: Wenn das Attribut **Attribut1** heißt, soll der Setter **set<Attributname>** heißen, also **setAttribut1**. ACHTUNG! Der erste Buchstabe des Attributnamen wird groß geschrieben!
+Grundsätzlich lautet die Regel: der Setter soll `set<Attributname>` heißen. Also wenn das Attribut `Attribut1` heißt, soll der Setter `setAttribut1` heißen. ACHTUNG! Der erste Buchstabe des Attributnamen wird groß geschrieben!
 
 ### Java 
 
@@ -60,7 +60,7 @@ Seine einzige Aufgabe ist eben das Ausgeben des Variablenwertes.
 
 ## Wie definiert man ein Getter?
 
-Ähnlich wie beim Setter gilt die Regel: Wenn das Attribut **Attribut1** heißt, soll der Setter **get<Attributname>** heißen, also **getAttribut1**. ACHTUNG! Der erste Buchstabe des Attributnamen wird groß geschrieben!
+Ähnlich wie beim Setter gilt die Regel: Der Getter soll `get<Attributname>` lauten. Also wenn das Attribut `Attribut1` heißt, soll der Getter `getAttribut1` heißen. ACHTUNG! Der erste Buchstabe des Attributnamen wird groß geschrieben!
 
 ### Java 
 

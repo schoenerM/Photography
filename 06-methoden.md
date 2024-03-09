@@ -1,22 +1,21 @@
 # Methoden
 
-Methoden haben wir bereits in einem früheren Kapitel gelernt. Zu diesem Zeitpunkt hast du aber noch nicht gewusst, dass wir immer in Klassen arbeiten, wenn wir programmieren. Das ganze Wissen, das du bisher erworben hast, ist weiterhin gültig. Dieses Wissen erweitern wir jetzt.
+Methoden haben wir bereits in einem früheren Kapitel kennengelernt. Zu diesem Zeitpunkt haben wir aber noch nicht gewusst, dass wir immer in Klassen arbeiten, wenn wir programmieren. Das ganze Wissen, das wir bisher erworben haben, ist jedoch weiterhin gültig. Dieses Wissen erweitern wir jetzt.
 
-Wie schon erwähnt, wenn du eine Klasse deklarierst, erbt diese Klasse automatisch von der "Urklasse" Object. Das Thema Vererbung schauen wir uns in einem späteren Kapitel im Detail an. Hier konzentrieren wir uns lediglich auf einige Methoden, welche von der Klasse Object vererbt werden.
+Wenn man eine Klasse deklariert, erbt diese Klasse automatisch von der "Urklasse" `Object` in Java bzw. `object` in C#. Das Thema Vererbung werden wir uns in einem späteren Kapitel näher erläutern. Hier konzentrieren wir uns lediglich auf einige Methoden, welche von der Klasse `Object`/`object` vererbt werden.
 
-Die Klasse Object beinhaltet u.a. folgende Methoden:
-- **toString()**: wird aufgerufen, um das Objekt in ein String zu verwandeln, z.B. in einer Consolenausgabe. Standardmäßig liefert diese Methode die Speicheradresse, der in der Instanzvariable gespeichert ist.
-- **equals()**: wird aufgerufen, wenn 2 Objekte miteinander verglichen werden sollen. Diese Methode definiert, wie der Vergleich erfolgen soll.
+Die Klasse `Object`/`object` beinhaltet u.a. folgende wichtige Methoden:
+- `toString()`/`ToString()`: wird aufgerufen, um das Objekt in ein String umzuwandeln, z.B. in einer Consolenausgabe. Standardmäßig (aus der Implementierung aus der `Object`-/`object`-Klasse) liefert diese Methode die Speicheradresse, wo die Instanzvariable gespeichert ist.
+- `equals()`/`Equals()`: wird aufgerufen, wenn 2 Objekte miteinander verglichen werden sollen. Diese Methode definiert, wie der Vergleich erfolgen soll.
 
-Das bedeutet, dass diese Methoden in jedem Objekt bereitstehen. Bei der Vererbung besteht die Möglichkeit diese Methode zu überschreiben. Der Sinn dahinter ist:
-- bei der **toString()**-Methode ist es oft nicht zielführend, die Speicheradresse auszugeben. Es kann durchaus sinnvoller sein, einige der oder alle Daten im Objekt textuell auszugeben. 
-- bei der **equals()**-Methode könnte man definieren, wie der Vergleiche zweier Objekte derselben Klasse miteinander verglichen werden sollen.
+Das bedeutet, dass diese Methoden in jedem Objekt bereitstehen. Bei der Vererbung besteht die Möglichkeit diese Methoden zu überschreiben. Der Sinn dahinter ist:
+- bei der `toString()`-/`ToString()`-Methode ist es oft nicht zielführend, die Speicheradresse auszugeben. Es kann durchaus sinnvoller sein, einige der oder alle Daten im Objekt textuell auszugeben. 
+- bei der `equals()`-/`Equals`-Methode könnte man definieren, wie der Vergleich zweier Objekte derselben Klasse miteinander erfolgen soll. Im Beispiel unten könnten wir definieren: Wenn der Vorname und der Nachname gleich sind, dann handelt es sich um dieselbe Person.
 
-## Die Methode toString()
-
-### Java
+## Die Methode `toString()`/`ToString()`
 
 ```Java
+// Java
 import org.apache.commons.validator.routines.EmailValidator;
 
 public class Person{
@@ -46,31 +45,56 @@ public class Person{
 }
 ```
 
-### C# 
+Hier liefert die toString-Methode statt der Speicheradresse Daten aus dem Objekt: Vor- und Nachname. Das Überschreiben erfolgt in Java durch die Annotation **@Override** oberhalb der Methodendeklaration. Diese Annotation verhindert, dass ein Fehler beim Kompilieren entsteht, weil 2 Methoden dieselbe Signatur haben.
 
-```c#
 
+```csharp
+// C# 
+using System.Net.Mail;
+
+public class Person
+{
+    private readonly string firstname;
+    private readonly string lastname;
+    private MailAddress email;
+
+    public Person(string firstname, string lastname)
+    {
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+
+    public MailAddress Email {
+        get{ return this.email; } // Getter des Attributs `email`
+        set{ this.email = new MailAddress(value, this.firstname + " " + this.lastname); }
+    }
+
+    public override string ToString(){
+      return this.firstname + " " + this.lastname;
+    }
+}
 ```
 
-Hier liefert die toString-Methode statt der Speicheradresse Daten aus dem Objekt: Vor- und Nachname. Das Überschreiben erfolgt durch die Annotation **@Override** oberhalb der Methodendeklaration. Diese Annotation verhindert, dass ein Fehler beim Kompilieren entsteht, weil 2 Methoden dieselbe Signatur haben.
+Hier liefert die ToString-Methode statt der Speicheradresse Daten aus dem Objekt: Vor- und Nachname. Das Überschreiben erfolgt in C# durch den Modifier `override` innerhalb der Methodendeklaration. Dieser Modifiers verhindert, dass ein Fehler beim Kompilieren entsteht, weil 2 Methoden dieselbe Signatur haben.
 
 ## Die Methode equals()
 
-In der Methode **equals()** ist definiert, wie 2 Objekte von derselben Klasse (oder einer von dieser Klasse vererbten Klasse) miteinander verglichen werden sollen. 
+In der Methode `equals()`/`Equals()` ist definiert, wie 2 Objekte von derselben Klasse (oder einer von dieser Klasse vererbten Klasse) miteinander verglichen werden sollen. 
 
-Aber wozu eine equals()-Methode, wenn es doch den Gleichheitsoperator "**==**" gibt?
+Aber wozu eine equals()-Methode, wenn es doch den Gleichheitsoperator `==` gibt?
 
-Der Gleichheitsoperator ist gut geeignet, um Variablen von primitiven Datentypen bzw. Strings miteinander zu vergleichen. Sollen aber 2 Objekte miteinander verglichen werden, bezieht sich der Operator "**==**" aber auf die Adresse auf den Speicherplatz, die in der Variable gespeichert ist. Es stellt sich also die Frage, was man möchte:
-- möchte ich herausfinden, ob es sich um ein und dasselbe Objekt handelt. In diesem Falle ist "**==**" gut geeignet
-- möchte man aber herausfinden, ob der Inhalt derselbe ist, ist "**==**" nicht geeignet.
+Der Gleichheitsoperator ist gut geeignet, um Variablen von primitiven Datentypen bzw. Strings miteinander zu vergleichen. Sollen aber 2 Objekte miteinander verglichen werden, bezieht sich der Operator `==` aber auf die Adresse zum Speicherplatz, wo die Variable gespeichert ist. Es stellt sich also die Frage, was man möchte:
+- möchte ich herausfinden, ob es sich um ein und dasselbe Objekt handelt. In diesem Falle ist `==` gut geeignet.
+- möchte man aber herausfinden, ob der Inhalt derselbe ist, ist `==` nicht geeignet.
 
-So wurde die Methode **equals()** für Objekte definiert, um diesen Anwendungsfall abzudecken.
+So wurde die Methode `equals()`/`Equals()` für Objekte definiert, um diesen Anwendungsfall abzudecken.
 
-In unserem obigen Beispiel könnten wir die Klasse folgendermaßen erweitern:
+Wir könnten unser obiges Beispiel folgendermaßen erweitern:
 
 ### Java
 
 ```Java
+// Java
 import org.apache.commons.validator.routines.EmailValidator;
 
 public class Person{
@@ -106,7 +130,7 @@ public class Person{
             return true;
         }
 
-        //handelt es sich, um eine Instanz der Klasse Person oder einer Klasse, die von Person erbt?
+        //handelt es sich, um keine Instanz der Klasse Person oder einer Klasse, die von Person erbt?
         if (!(object instanceof Person)){
             return false;
         }
@@ -118,10 +142,50 @@ public class Person{
 }
 ```
 
-### C# 
+```csharp
+// C# 
+using System.Net.Mail;
 
-```c#
+public class Person
+{
+    private readonly string firstname;
+    private readonly string lastname;
+    private MailAddress email;
 
+    public Person(string firstname, string lastname)
+    {
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+
+    public MailAddress Email {
+        get{ return this.email; } // Getter des Attributs `email`
+        set{ this.email = new MailAddress(value, this.firstname + " " + this.lastname); }
+    }
+
+    public override string ToString(){
+      return this.firstname + " " + this.lastname;
+    }
+
+    public override bool Equals(object obj)
+    {
+        // If the object is the same instance, return true
+        if (Object.ReferenceEquals(this, obj))
+        {
+            return true;
+        }
+
+        // If the object is not a Person or is null, return false
+        if (!(obj is Person))
+        {
+            return false;
+        }
+
+        // Cast the object to Person and compare each attribute
+        Person person = (Person)obj;
+        return firstname == person.firstname && lastname == person.lastname && email == person.email;
+    }
+}
 ```
 
 

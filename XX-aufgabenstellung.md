@@ -51,17 +51,34 @@ Folgende Funktionalität sollte unsere Liste zumindest haben:
 (Siehe auch Java List Interface: https://docs.oracle.com/javase/8/docs/api/java/util/List.html)
 
 ```java
- void    add(E e) // fügt ein Element ans Ende der Liste hinzu
- boolean add(int index, E element) // fügt ein Element an der Position 'index' in die Liste hinzu und gibt einen boolean zurück, der besagt, ob das Hinzufügen funktioniert hat
- int     size() // gibt die Anzahl der Element in der Liste aus
- E       get(int index) // gibt das Element an der Position 'index' aus
- E       remove(int index) // löscht das Element an der Position 'index' aus der Liste
+// Java
+ void    add(E e); // fügt ein Element ans Ende der Liste hinzu
+ boolean add(int index, E element); // fügt ein Element an der Position 'index' in die Liste hinzu und gibt einen boolean zurück, der besagt, ob das Hinzufügen funktioniert hat
+ int     size(); // gibt die Anzahl der Element in der Liste aus
+ E       get(int index); // gibt das Element an der Position 'index' aus
+ E       remove(int index); // löscht das Element an der Position 'index' aus der Liste
+```
+
+```csharp
+// C# 
+ void    Add(E e); // fügt ein Element ans Ende der Liste hinzu
+ bool Add(int index, E element); // fügt ein Element an der Position 'index' in die Liste hinzu und gibt einen boolean zurück, der besagt, ob das Hinzufügen funktioniert hat
+ int     Size(); // gibt die Anzahl der Element in der Liste aus
+ E       Get(int index); // gibt das Element an der Position 'index' aus
+ E       Remove(int index); // löscht das Element an der Position 'index' aus der Liste
 ```
 
 Zusätzlich:
 ```java
- String  toString() // Gibt einen String aus, der die Liste ansprechend darstellt
- String  toStringReverse() // Gibt einen String aus, der die Liste rückwärts ansprechend darstellt
+// Java
+ String  toString(); // Gibt einen String aus, der die Liste ansprechend darstellt
+ String  toStringReverse(); // Gibt einen String aus, der die Liste rückwärts ansprechend darstellt
+```
+
+```csharp
+// C# 
+ string  ToString(); // Gibt einen String aus, der die Liste ansprechend darstellt
+ string  ToStringReverse(); // Gibt einen String aus, der die Liste rückwärts ansprechend darstellt
 ```
 
 Wie auch bei der einfach verketteten Liste kannst du gerne `Generics` verwenden.

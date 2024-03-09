@@ -7,7 +7,7 @@ Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Them
 - Aufzählen, woraus eine Klasse besteht
 - Erklären, wann und wozu Getter und Setter sinnvoll sind
 - Erklären, wann und wozu ein Konstruktor sinnvoll ist
-- Den Unterschied zwischen Klasse und Objekt erklären
+- Den Unterschied zwischen Klasse, Objekt und Instanz erklären
 
 ## Inhaltsverzeichnis
 
